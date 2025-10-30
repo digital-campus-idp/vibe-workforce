@@ -2,317 +2,189 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The VIBE Workforce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The VIBE Workforce | Where Energy Meets Excellence</title>
   <style>
     body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff;
+      background: #f5f6fa;
       color: #333;
-      scroll-behavior: smooth;
-      overflow-x: hidden;
-    }
-
-    header {
-      background-color: #fff;
-      color: #6e44ff;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      flex-wrap: wrap;
-    }
-
-    header .logo {
-      font-weight: 700;
-      font-size: 1.6rem;
-      color: #6e44ff;
-      letter-spacing: 1px;
-    }
-
-    nav a {
-      color: #6e44ff;
-      text-decoration: none;
-      margin-left: 2rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #f37021;
-    }
-
-    .nav-menu {
-      display: flex;
-      align-items: center;
-    }
-
-    .hamburger {
-      display: none;
-      font-size: 1.8rem;
-      background: none;
-      border: none;
-      color: #6e44ff;
-      cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-      }
-
-      .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        margin-top: 3.5rem;
-      }
-
-      .nav-menu.show {
-        display: flex;
-      }
-
-      .nav-menu a {
-        padding: 1rem;
-        border-top: 1px solid #eee;
-        margin: 0;
-      }
-
-      header {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-    }
-
-    footer {
-      background-color: #f7f7f7;
-      color: #6e44ff;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      margin-top: 3rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .section {
-      padding: 3rem 2rem;
-      max-width: 1100px;
-      margin: 0 auto 3rem auto;
-    }
-
-    .section:nth-child(even) {
-      background-color: #f7f7f7;
-    }
-
-    .shape-divider {
-      text-align: center;
-      color: #999;
-      font-weight: 600;
-      margin: 2rem 0;
-      position: relative;
-    }
-
-    .shape-divider::before, .shape-divider::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 40%;
-      height: 2px;
-      background: linear-gradient(to right, transparent, #ddd);
-    }
-
-    .shape-divider::before { left: 0; }
-    .shape-divider::after { right: 0; background: linear-gradient(to left, transparent, #ddd); }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-
-    h3 {
-      color: #555;
-      margin-top: 1.2rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
       line-height: 1.6;
     }
-
-    .color-purple h2 { color: #6e44ff; }
-    .color-blue h2 { color: #0072ce; }
-    .color-green h2 { color: #6abf4b; }
-    .color-red h2 { color: #d71920; }
-    .color-orange h2 { color: #f37021; }
-
-    .newsletter h3 {
-      margin-top: 1.5rem;
-      color: #6e44ff;
+    header {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    }
+    h2 {
+      color: #5b21b6;
+      border-left: 6px solid #6a11cb;
+      padding-left: 10px;
+      font-size: 1.6rem;
+    }
+    h3 {
+      margin-top: 1rem;
+      color: #111;
+    }
+    .divider {
+      width: 80%;
+      height: 2px;
+      margin: 4rem auto;
+      background: linear-gradient(90deg, transparent, #ccc, transparent);
+      border: none;
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    ul {
+      margin-left: 1.2rem;
+    }
+    .hashtag {
+      display: inline-block;
+      background: #e5e7eb;
+      color: #333;
+      border-radius: 8px;
+      padding: 0.4rem 0.8rem;
+      margin: 0.3rem;
+      font-weight: 500;
+    }
+    .newsletter {
+      background: #f8fafc;
+    }
+    .newsletter h3 {
+      color: #6a11cb;
+    }
   </style>
 </head>
-
 <body>
-<header>
-  <div class="logo">The VIBE Workforce</div>
-  <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
-  <nav class="nav-menu">
-    <a href="#intro">About</a>
-    <a href="#tech">Tech Savvy</a>
-    <a href="#agile">Agile Mindset</a>
-    <a href="#positive">Positive Energy</a>
-    <a href="#unified">Unified Engagement</a>
-    <a href="#skill">Skill Acceleration</a>
-    <a href="#hashtags">Hashtags</a>
-    <a href="#essence">Essence</a>
-    <a href="#newsletter">Newsletter</a>
-  </nav>
-</header>
+  <header>
+    <h1>The VIBE Workforce: Where Energy Meets Excellence</h1>
+    <p>Where vision meets innovation, belonging, and energy.</p>
+  </header>
 
-<!-- Intro -->
-<section id="intro" class="section">
-  <div class="color-purple">
+  <section class="section">
     <h2>The VIBE Workforce: Where Energy Meets Excellence</h2>
-    <p>In a world where change is constant, the true differentiator isn’t just skill — it’s spirit. At the heart of our organization beats something extraordinary: a workforce that doesn’t just adapt, it advances. We call it <strong>VIBE — a living, breathing culture of vision, innovation, belonging, and energy.</strong></p>
-  </div>
-</section>
+    <p>In a world where change is constant, the true differentiator isn’t just skill — it’s spirit. At the heart of our organization beats something extraordinary: a workforce that doesn’t just adapt, it advances. We call it <strong>VIBE</strong> — a living, breathing culture of vision, innovation, belonging, and energy.</p>
+  </section>
 
-<div class="shape-divider">Shape</div>
+  <hr class="divider" />
 
-<!-- Tech Savvy -->
-<section id="tech" class="section color-orange">
-  <h2>Tech Savvy: Powering Possibility</h2>
-  <p>“I am Tech Savvy – I explore, evolve, and empower.”</p>
-  <p>In a digital-first world, being tech savvy means more than knowing tools — it’s about using technology to innovate, simplify, and connect. Our people turn ideas into impact through the smart use of digital solutions that shape tomorrow’s success.​</p>
-  <p>Being tech-savvy is not about keeping up with tools; it’s about pushing the boundaries of what’s possible. Our people transform complexity into clarity, harnessing technology not as a crutch but as a catalyst. They make the digital feel deeply human — turning data into decisions and code into connection.</p>
-</section>
+  <section class="section">
+    <h2>Tech Savvy: Powering Possibility</h2>
+    <p><em>“I am Tech Savvy – I explore, evolve, and empower.”</em></p>
+    <p>In a digital-first world, being tech savvy means more than knowing tools — it’s about using technology to innovate, simplify, and connect. Our people turn ideas into impact through the smart use of digital solutions that shape tomorrow’s success.​</p>
+    <p>Being tech-savvy is not about keeping up with tools; it’s about pushing the boundaries of what’s possible. Our people transform complexity into clarity, harnessing technology not as a crutch but as a catalyst. They make the digital feel deeply human — turning data into decisions and code into connection.</p>
+  </section>
 
-<div class="shape-divider">Shape</div>
+  <hr class="divider" />
 
-<!-- Agile Mindset -->
-<section id="agile" class="section color-blue">
-  <h2>Agile Mindset: Adapting to Win</h2>
-  <p>“I have an Agile Mindset – I adapt, act, and achieve.”</p>
-  <p>Having an agile mindset is about being flexible, learning fast, and improving continuously. It means embracing change, experimenting without fear, and staying future-ready. Like agility pioneers say: “The secret of change is to build the new, not fight the old.”​</p>
-  <p>Agility is our everyday muscle. Whether it’s refining how we work or reimagining what’s next, agility keeps us fluid, curious, and fearless. Like the best innovators, we pivot with purpose, act with empathy, and move as one team — because progress belongs to the adaptable.​</p>
-</section>
+  <section class="section">
+    <h2>Agile Mindset: Adapting to Win</h2>
+    <p><em>“I have an Agile Mindset – I adapt, act, and achieve.”</em></p>
+    <p>Having an agile mindset is about being flexible, learning fast, and improving continuously. It means embracing change, experimenting without fear, and staying future-ready. Like agility pioneers say: “The secret of change is to build the new, not fight the old.”</p>
+    <p>Agility is our everyday muscle. Whether it’s refining how we work or reimagining what’s next, agility keeps us fluid, curious, and fearless. Like the best innovators, we pivot with purpose, act with empathy, and move as one team — because progress belongs to the adaptable.</p>
+  </section>
 
-<div class="shape-divider">Shape</div>
+  <hr class="divider" />
 
-<!-- Positive Energy -->
-<section id="positive" class="section color-green">
-  <h2>Positive Energy: Fueling Every Moment</h2>
-  <p>“I have Positive Energy – I uplift, inspire, and celebrate.”</p>
-  <p>Every great culture thrives on positivity. It fuels collaboration, creativity, and courage. By radiating optimism, we energize not just ourselves but everyone around us, turning challenges into opportunities.​</p>
-  <p>Our workplaces thrive on optimism. Every conversation, every collaboration, every creative spark stems from a shared sense of possibility. This isn’t selective positivity — it’s resilience wrapped in hope. It’s choosing to rise, again and again, together.​</p>
-</section>
+  <section class="section">
+    <h2>Positive Energy: Fueling Every Moment</h2>
+    <p><em>“I have Positive Energy – I uplift, inspire, and celebrate.”</em></p>
+    <p>Every great culture thrives on positivity. It fuels collaboration, creativity, and courage. By radiating optimism, we energize not just ourselves but everyone around us, turning challenges into opportunities.​</p>
+    <p>Our workplaces thrive on optimism. Every conversation, every collaboration, every creative spark stems from a shared sense of possibility. This isn’t selective positivity — it’s resilience wrapped in hope. It’s choosing to rise, again and again, together.</p>
+  </section>
 
-<div class="shape-divider">Shape</div>
+  <hr class="divider" />
 
-<!-- Unified Engagement -->
-<section id="unified" class="section color-red">
-  <h2>Unified Engagement: Stronger Together</h2>
-  <p>“I practice Unified Engagement – I belong, connect, and contribute.”</p>
-  <p>Engagement is more than participation; it’s belonging. Unified engagement means every voice is valued, every idea matters, and we grow stronger together. Like Salesforce’s ‘Ohana’ culture, we create connections that matter.​</p>
-  <p>Engagement isn’t about attendance; it’s about alignment. VIBE is where belonging comes alive — where cross-functional walls fall away, where one person’s idea can cascade into an entire movement. We listen deeply, include boldly, and grow collectively.​</p>
-</section>
+  <section class="section">
+    <h2>Unified Engagement: Stronger Together</h2>
+    <p><em>“I practice Unified Engagement – I belong, connect, and contribute.”</em></p>
+    <p>Engagement is more than participation; it’s belonging. Unified engagement means every voice is valued, every idea matters, and we grow stronger together. Like Salesforce’s ‘Ohana’ culture, we create connections that matter.​</p>
+    <p>Engagement isn’t about attendance; it’s about alignment. VIBE is where belonging comes alive — where cross-functional walls fall away, where one person’s idea can cascade into an entire movement. We listen deeply, include boldly, and grow collectively.</p>
+  </section>
 
-<div class="shape-divider">Shape</div>
+  <hr class="divider" />
 
-<!-- Skill Acceleration -->
-<section id="skill" class="section color-purple">
-  <h2>Skill Acceleration: Fueling Forward Growth</h2>
-  <p>“I am committed to Skill Acceleration – I learn, lead, and lift others.”</p>
-  <p>Skill acceleration is the heartbeat of growth. It’s about constantly learning, sharing knowledge, and empowering others to learn too. When one of us grows, the entire VIBE workforce advances — faster, sharper, stronger.​</p>
-  <p>Learning here isn’t linear — it’s living. Every milestone sparks the next, and every skill gained becomes a gift shared. Skill acceleration is our culture’s forward motion — a constant cycle of growth, mentorship, and shared mastery.​</p>
-</section>
+  <section class="section">
+    <h2>Skill Acceleration: Fueling Forward Growth</h2>
+    <p><em>“I am committed to Skill Acceleration – I learn, lead, and lift others.”</em></p>
+    <p>Skill acceleration is the heartbeat of growth. It’s about constantly learning, sharing knowledge, and empowering others to learn too. When one of us grows, the entire VIBE workforce advances — faster, sharper, stronger.​</p>
+    <p>Learning here isn’t linear — it’s living. Every milestone sparks the next, and every skill gained becomes a gift shared. Skill acceleration is our culture’s forward motion — a constant cycle of growth, mentorship, and shared mastery.</p>
+  </section>
 
-<div class="shape-divider">Shape</div>
+  <hr class="divider" />
 
-<!-- Hashtags -->
-<section id="hashtags" class="section">
-  <h2>Suggested Internal Hashtags</h2>
-  <p>For internal campaigns, channels, or recognition programs:</p>
-  <ul>
-    <li>#IamTechSavvy</li>
-    <li>#AgileInAction</li>
-    <li>#PositiveVibesOnly</li>
-    <li>#UnifiedEnergy</li>
-    <li>#SkillSprint</li>
-    <li>#WeAreVIBE</li>
-  </ul>
-</section>
+  <section class="section">
+    <h2>The Essence of VIBE</h2>
+    <p>This is more than a campaign. It’s a commitment — to curiosity, agility, and the collective heartbeat of an inspired workforce. Because when people feel empowered to evolve, fulfillment becomes second nature — and excellence becomes inevitable.</p>
+  </section>
 
-<div class="shape-divider">Shape</div>
+  <hr class="divider" />
 
-<!-- Essence -->
-<section id="essence" class="section color-teal">
-  <h2>The Essence of VIBE</h2>
-  <p>This is more than a campaign. It’s a commitment — to curiosity, agility, and the collective heartbeat of an inspired workforce. Because when people feel empowered to evolve, fulfillment becomes second nature — and excellence becomes inevitable.​</p>
-</section>
+  <section class="section">
+    <h2>Suggested Internal Hashtags</h2>
+    <div>
+      <span class="hashtag">#IamTechSavvy</span>
+      <span class="hashtag">#AgileInAction</span>
+      <span class="hashtag">#PositiveVibesOnly</span>
+      <span class="hashtag">#UnifiedEnergy</span>
+      <span class="hashtag">#SkillSprint</span>
+      <span class="hashtag">#WeAreVIBE</span>
+    </div>
+  </section>
 
-<div class="shape-divider">Shape</div>
+  <hr class="divider" />
 
-<!-- Newsletter -->
-<section id="newsletter" class="section newsletter">
-  <h2>Content for Newsletters / Activities / Mails to Engage</h2>
-  <p>Newsletter edition for your internal communications under the VIBE Workforce theme — written in a crisp, upbeat, and human-centered tone perfect for inbox engagement. Each section is designed to be read within seconds while sparking connection and motivation.​</p>
+  <section class="section newsletter">
+    <h2>Newsletter & Weekly Engagement Activities</h2>
 
-  <h3>⚙️ Tech Savvy: Powering Possibility</h3>
-  <p>We’re not just using tech — we’re shaping the future with it.<br>
-  This week, explore how your team is using smart tools to simplify complex tasks and amplify impact.<br>
-  <strong>Quick thought:</strong> How are you using technology to make life easier today?</p>
+    <h3>⚙️ Tech Savvy: Powering Possibility</h3>
+    <p>We’re not just using tech — we’re shaping the future with it.</p>
+    <p>This week, explore how your team is using smart tools to simplify complex tasks and amplify impact.</p>
+    <p><strong>Quick thought:</strong> How are you using technology to make life easier today?</p>
 
-  <h3>🔄 Agile Mindset: Adapting to Win</h3>
-  <p>Being agile means learning fast and acting faster.<br>
-  From product sprints to problem-solving, agility is our superpower.<br>
-  <strong>Try this mini challenge:</strong> Pick one routine this week and find a smarter, faster way to do it.</p>
+    <h3>🔄 Agile Mindset: Adapting to Win</h3>
+    <p>Being agile means learning fast and acting faster.</p>
+    <p>From product sprints to problem-solving, agility is our superpower.</p>
+    <p><strong>Try this mini challenge:</strong> Pick one routine this week and find a smarter, faster way to do it.</p>
 
-  <h3>💫 Positive Energy: Fueling Every Moment</h3>
-  <p>A positive word can spark a big wave.<br>
-  Nominate a teammate whose energy lifts the room — let’s fill the week with gratitude and good vibes!<br>
-  <strong>Nominate here:</strong> [Click button: “Appreciate Now”]</p>
+    <h3>💫 Positive Energy: Fueling Every Moment</h3>
+    <p>A positive word can spark a big wave.</p>
+    <p>Nominate a teammate whose energy lifts the room — let’s fill the week with gratitude and good vibes!</p>
+    <p><a href="#">Appreciate Now →</a></p>
 
-  <h3>🤝 Unified Engagement: Stronger Together</h3>
-  <p>Great things happen when voices unite.<br>
-  Join our cross-team VIBE Story Circle and share how your team collaborates for success.<br>
-  <strong>CTA:</strong> Register for Friday’s session on the intranet!</p>
+    <h3>🤝 Unified Engagement: Stronger Together</h3>
+    <p>Great things happen when voices unite.</p>
+    <p>Join our cross-team VIBE Story Circle and share how your team collaborates for success.</p>
+    <p><a href="#">Register for Friday’s session on the intranet!</a></p>
 
-  <h3>🚀 Skill Acceleration: Learning Without Limits</h3>
-  <p>Your growth is the company’s growth.<br>
-  From upskilling bootcamps to mentoring circles, opportunities are all around you.<br>
-  <strong>Featured story:</strong> Check how the Product Team completed their 21-day AI Tools challenge — and what they learned!</p>
-</section>
+    <h3>🚀 Skill Acceleration: Learning Without Limits</h3>
+    <p>Your growth is the company’s growth.</p>
+    <p>From upskilling bootcamps to mentoring circles, opportunities are all around you.</p>
+    <p><strong>Featured story:</strong> Check how the Product Team completed their 21-day AI Tools challenge — and what they learned!</p>
+  </section>
 
-<footer>
-  <p>© 2025 The VIBE Workforce. All rights reserved.</p>
-</footer>
-
-<script>
-  document.querySelector('.hamburger').addEventListener('click', () => {
-    document.querySelector('.nav-menu').classList.toggle('show');
-  });
-
-  document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      const id = link.getAttribute('href').substring(1);
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-      document.querySelector('.nav-menu').classList.remove('show');
-    });
-  });
-</script>
+  <footer>
+    © 2025 VIBE Workforce | Energy Meets Excellence
+  </footer>
 </body>
 </html>

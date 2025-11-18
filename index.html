@@ -149,10 +149,10 @@
       max-width: 450px;
       max-height: 450px;
       object-fit: contain;
-      border-radius: 12px;
+      /* border-radius: 12px;
       box-shadow:
         0 10px 20px rgba(0,0,0,0.25),
-        0 0 15px rgba(0,0,0,0.15);
+        0 0 15px rgba(0,0,0,0.15); */
       background: transparent;
       display: inline-block;
       margin: 0;
@@ -172,8 +172,8 @@
       }
 
       .image-box img.buzz-img {
-        max-width: 220px;
-        max-height: 220px;
+        max-width: 150px;
+        max-height: 150px;
       }
 
     .reverse .content-row {
@@ -200,11 +200,18 @@
     @media (max-width: 768px) {
       .content-row {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
       }
       .reverse .content-row {
         flex-direction: column;
       }
+      .text-box {
+    text-align: left;  /* override any inherited centering */
+  }
+
+  .image-box {
+    text-align: center; /* only images stay centered */
+  }
       nav a {
         margin-left: 1rem;
         font-size: 0.9rem;

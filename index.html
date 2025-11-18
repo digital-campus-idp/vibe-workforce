@@ -160,6 +160,22 @@
       vertical-align: middle;
     }
 
+     /* Updated sizing rules */
+      .image-box img.characteristic {
+        max-width: 550px;
+        max-height: 550px;
+      }
+
+      .image-box img.other-img {
+        max-width: 380px;
+        max-height: 380px;
+      }
+
+      .image-box img.buzz-img {
+        max-width: 220px;
+        max-height: 220px;
+      }
+
     .reverse .content-row {
       flex-direction: row-reverse;
     }
@@ -217,7 +233,7 @@
     <div class="text-box color-red">
       <h2>The VIBE Workforce: DC 3.0</h2>
       <div class="image-box">
-        <img src="vibe_characteristics.png" alt="The VIBE Workforce" />
+        <img src="vibe_characteristics.png" class="characteristic" alt="The VIBE Workforce" />
       </div>
       <p>In a world where change is constant, the true differentiator isn’t just skill — it’s spirit. At the heart of IDP, beats something extraordinary, a workforce that advances - We call it VIBE WORKFOCE – a future ready workforce that embodies digital fluency, adaptability, resilience, and committed, to continuous learning, apply collaborative, and driven by purpose.</p>
     </div>
@@ -232,7 +248,7 @@
     <div class="text-box color-orange">
       <h2>Tech Savvy - Expertise</h2>
       <div class="image-box">
-        <img src="tech.png" alt="Tech Savvy" />
+        <img src="tech.png" class="other-img" alt="Tech Savvy" />
       </div>
       <p><strong>What is Tech Savvy and Why It Matters to You?</strong>
           <p>In IDP Digital World, being means more than just knowing tools—it’s about leveraging technology to innovate, simplify, and connect. It’s the ability to use workplace tools effectively, adopt emerging technologies, develop tech-mindset and apply them strategically to drive business success and creativity.</p>
@@ -246,7 +262,7 @@
           </p>
 
       <div class="image-box">
-        <img src="buzz.png" alt="Buzz" />
+        <img src="buzz.png" class="buzz-img" alt="Buzz" />
       </div>
       <p>If you feel inspired by this, motivated to embody it, feel that being ‘Tech Savvy’ is the need of the hour in DC or simply want to support the this, head over to the <a href="https://teams.microsoft.com/l/channel/19%3A8a8fd87e74e14d33bad8b46d4cb5d29d%40thread.tacv2/General?groupId=ef2264c8-c98a-401a-878e-1a678631515a&tenantId=c0c7ad79-cf13-4f39-8eeb-a1829aa096a6" >Teams – DC General</a> and drop a comment #TechSavvy. Your support helps spread the vibe and inspires others to join in!</p>
     </div>
@@ -260,7 +276,7 @@
     <div class="text-box color-blue">
       <h2>Agile Mindset – Quality</h2>
       <div class="image-box">
-         <img src="agile.png" alt="Agile Mindset" />
+         <img src="agile.png" class="other-img" alt="Agile Mindset" />
       </div>
       <p><strong>What is an Agile Mindset and Why It Matters to You?</strong>
          <p>An Agile Mindset is the foundation of a high-performing, adaptable team at IDP Digital Campus. It means embracing change, learning fast, and continuously improvement. With flexibility, experimentation, and future readiness, agility lets us pivot with purpose and act with empathy—because progress belongs to the adaptable.</p>
@@ -274,7 +290,7 @@
           </p>
 
       <div class="image-box">
-        <img src="buzz.png" alt="Buzz" />
+        <img src="buzz.png" class="buzz-img" alt="Buzz" />
       </div>
       <p>If you feel inspired by this, motivated to embody it, feel that ‘Agile Mindset’ is the need of the hour in DC or simply want to support the this, head over <a href="https://teams.microsoft.com/l/channel/19%3A8a8fd87e74e14d33bad8b46d4cb5d29d%40thread.tacv2/General?groupId=ef2264c8-c98a-401a-878e-1a678631515a&tenantId=c0c7ad79-cf13-4f39-8eeb-a1829aa096a6" >Teams – DC General</a> and drop a comment #AgileMindset. Your support helps spread the vibe and inspires others to join in!</p>
     </div>
@@ -288,7 +304,7 @@
     <div class="text-box color-yellow">
       <h2>Positive Energy – Caring</h2>
       <div class="image-box">
-        <img src="positive.png" alt="Positive Energy" />
+        <img src="positive.png" class="other-img" alt="Positive Energy" />
       </div>
       <p><strong>What is Positive Energy and Why It Matters to You?</strong>
          <p>Positive Energy is the uplifting and resilient spirit that powers our culture at IDP. It fuels collaboration, creativity, and courage, creating an environment where everyone can thrive. In the Vibe Workforce, elements like flexible work environments (hybrid, remote, async work), human-centred and inclusive culture, motivation through purpose and autonomy, and agile, flat, networked ways of working make this positive energy tangible in our everyday experience.</p>
@@ -302,7 +318,7 @@
           </p>
 
       <div class="image-box">
-        <img src="buzz.png" alt="Buzz" />
+        <img src="buzz.png" class="buzz-img" alt="Buzz" />
       </div>
       <p>If you feel inspired by this, motivated to embody it, feel that ‘Positive Energy is the need of the hour in DC or simply want to support the this, head over <a href="https://teams.microsoft.com/l/channel/19%3A8a8fd87e74e14d33bad8b46d4cb5d29d%40thread.tacv2/General?groupId=ef2264c8-c98a-401a-878e-1a678631515a&tenantId=c0c7ad79-cf13-4f39-8eeb-a1829aa096a6" >Teams – DC General</a> and drop a comment #PositiveEnergy. Your support helps spread the vibe and inspires others to join in!</p>
     </div>
@@ -315,7 +331,7 @@
     <div class="text-box color-teal">
       <h2>Unified Engagement: Stronger Together – Community</h2>
       <div class="image-box">
-         <img src="unified.png" alt="Unified Engagement" />
+         <img src="unified.png" class="other-img" alt="Unified Engagement" />
        </div>
        <p><strong>What is Unified Engagement and Why It Matters to You?</strong>
          <p>Unified Engagement is about deep alignment and belonging. It means every voice matters, every idea counts, and together we grow stronger. In the Vibe Workforce, this is made real through proactive communication, empowered employee voices, AI-assisted recognition and feedback, and a diversity and inclusion culture.</p>
@@ -329,7 +345,7 @@
           </p>
 
       <div class="image-box">
-        <img src="buzz.png" alt="Buzz" />
+        <img src="buzz.png" class="buzz-img" alt="Buzz" />
       </div>
       <p>If you feel inspired by this, motivated to embody it, feel that ‘Unified Engagement’ is the need of the hour in DC or simply want to support the this, head over <a href="https://teams.microsoft.com/l/channel/19%3A8a8fd87e74e14d33bad8b46d4cb5d29d%40thread.tacv2/General?groupId=ef2264c8-c98a-401a-878e-1a678631515a&tenantId=c0c7ad79-cf13-4f39-8eeb-a1829aa096a6" >Teams – DC General</a> and drop a comment #UnifiedEngagement. Your support helps spread the vibe and inspires others to join in!</p>
     </div>
@@ -343,7 +359,7 @@
     <div class="text-box color-green">
       <h2>Skill Acceleration - Expertise</h2>
       <div class="image-box">
-        <img src="skill.png" alt="Skill Acceleration" />
+        <img src="skill.png" class="other-img" alt="Skill Acceleration" />
       </div>
       <p><strong>What is Skill Acceleration & Why It Matters to You?</strong>
          Skill Acceleration is the fast-track growth mindset driving your professional journey. It blends continuous learning, career clarity, everyday improvements, and expanding capabilities. In the Vibe Workforce, elements like microlearning, self-driven growth, gamified learning, and gig-style internal mobility make development dynamic and engaging.
@@ -356,7 +372,7 @@
        </p>
 
       <div class="image-box">
-        <img src="buzz.png" alt="Buzz" />
+        <img src="buzz.png" class="buzz-img" alt="Buzz" />
       </div>
       <p>If you feel inspired by this, motivated to embody it, feel that ‘Skill Acceleration’ is the need of the hour in DC or simply want to support the this, head over <a href="https://teams.microsoft.com/l/channel/19%3A8a8fd87e74e14d33bad8b46d4cb5d29d%40thread.tacv2/General?groupId=ef2264c8-c98a-401a-878e-1a678631515a&tenantId=c0c7ad79-cf13-4f39-8eeb-a1829aa096a6" >Teams – DC General</a> and drop a comment #SkillAcceleration. Your support helps spread the vibe and inspires others to join in!</p>
     </div>
